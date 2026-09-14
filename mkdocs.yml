@@ -1,0 +1,69 @@
+site_name: Torchlight
+site_description: A lightweight, from-scratch deep learning framework built for learning and small-scale experiments.
+site_url: https://example.com/torchlight
+repo_url: https://github.com/anomalyco/opencode
+edit_uri: ""
+
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - python
+    - bash
+  features:
+    - navigation.tabs
+    - toc.integrate
+
+extra_css: []
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: false
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
+  - js/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Tutorials:
+      - tutorials/01-tensors.md
+      - tutorials/02-autograd.md
+      - tutorials/03-neural-networks.md
+      - tutorials/04-data-and-optimizers.md
+      - tutorials/05-backends.md
+      - tutorials/06-jit-and-persistence.md
+      - tutorials/07-real-world-datasets.md
+  - Projects:
+      - projects/sentiment-classifier.md
+      - projects/machine-translation.md
+      - projects/transformers-from-scratch.md
+  - Examples:
+      - examples/sklearn-classifier.md
+      - examples/sklearn-digits-conv.md
+      - examples/sklearn-autoencoder.md
+      - examples/cuda.md
+  - API Reference:
+      - api/core.md
+      - api/tensor.md
+      - api/autograd.md
+      - api/nn.md
+      - api/optim.md
+      - api/data.md
+      - api/utils.md
+      - api/jit.md
+      - api/backends.md

@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+conda-env*/
+.conda/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Type checking / linting
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+
+# Notebook / IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Benchmark / profiling artifacts
+benchmarks/results/
+*.prof
+*.npy
+
+# Docs build
+docs/_build/
+docs/build/
+site/
+# Data
+*.zip
+# Model checkpoints / logs
+runs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.txt
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+
+# Agents file
+session-ses_f666.md

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torchlight"
+version = "0.1.0"
+description = "A lightweight, from-scratch deep learning framework (CPU-first) built for learning and small-scale LLM experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Torchlight Contributors" }]
+keywords = ["deep-learning", "autograd", "tensor", "nn", "numpy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+cuda = ["numba[cuda]>=0.60"]  # numba-cuda kernels on an NVIDIA GPU (brings numba + CUDA support)
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
